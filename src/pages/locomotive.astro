@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import '../css/locomotive.css'
+import { Icon } from 'astro-icon'
+import '../css/main.css'
+---
+
+<Layout title="Alba Capital">
+  <main class="mx-auto max-w-screen-lg" data-scroll-container>
+    <div>
+      <section class="top" data-scroll-section id="pin2">
+        <div class="top-description">
+          <h1 data-scroll data-scroll-speed="3">
+            An absolute <span class="gold">blank</span> Section!
+          </h1>
+          <p
+            class="disappear"
+            data-scroll
+            data-scroll-class="appear"
+            data-scroll-repeat="true">
+            except for the texts atleast
+          </p>
+          <svg
+            width="449"
+            height="157"
+            viewBox="0 0 549 157"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.55568 33.819C105.754 212.873 467.187 -29.5023 542.273 101.507"
+              stroke="#FDC65D"
+              stroke-width="5"></path>
+          </svg>
+        </div>
+      </section>
+    </div>
+    <section
+      class="c-section"
+      data-scroll-section
+      data-scroll-section-id="section3"
+      style="opacity: 1; pointer-events: all; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -3213, 0, 1);"
+      data-scroll-section-inview="">
+      <div class="o-container" id="scroll-direction">
+        <div class="c-direction-block_wrapper">
+          <div
+            class="c-section_infos -padding is-inview"
+            data-scroll=""
+            data-scroll-sticky
+            data-scroll-target="#scroll-direction"
+            style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 604, 0, 1);">
+            <div class="c-section_infos_inner is-inview" data-scroll="">
+              <h3>
+                02. <br />
+                 Scroll direction
+              </h3>
+              <div class="c-sections_infos_text u-text">
+                <p>
+                  And if that wasn't enough, make 'em go backwards. Or upwards.
+                  Or downwards!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="c-direction-block" id="direction">
+            <div class="c-direction-block_item -one">
+              <span
+                class="c-direction-block_item_inner is-inview"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-speed="6"
+                data-scroll-target="#direction"
+                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -174.512, 0, 0, 1);">
+                I'm moving in this direction
+              </span>
+            </div>
+            <div class="c-direction-block_item -two">
+              <span
+                class="c-direction-block_item_inner is-inview"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-speed="-8"
+                data-scroll-target="#direction"
+                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 232.683, 0, 0, 1);">
+                And in this direction
+              </span>
+            </div>
+            <div class="c-direction-block_item -three">
+              <span
+                class="c-direction-block_item_inner is-inview"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-speed="9"
+                data-scroll-target="#direction"
+                data-scroll-delay="0.05"
+                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -269.335, 0, 0, 1);">
+                Sooo customizable. Right?
+              </span>
+            </div>
+            <div class="c-direction-block_item -four">
+              <span
+                class="c-direction-block_item_inner is-inview"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-speed="15"
+                data-scroll-target="#direction"
+                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -436.28, 0, 0, 1);">
+                I can also go in this direction
+              </span>
+            </div>
+            <div class="c-direction-block_item -five">
+              <span
+                class="c-direction-block_item_inner is-inview"
+                data-scroll=""
+                data-scroll-direction="horizontal"
+                data-scroll-speed="-20"
+                data-scroll-target="#direction"
+                data-scroll-delay="0.05"
+                style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 598.519, 0, 0, 1);">
+                Ok, enough!!!!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-section" data-scroll-section>
+      <div class="o-container" id="scroll-alba">
+        <div class="c-direction-block_wrapper">
+          <div
+            class="absolute z-30 h-full w-auto"
+            data-scroll
+            data-scroll-position="bottom"
+            data-scroll-speed="6">
+            <Icon name="alba_elements_peq" class="h-1/4 w-auto" />
+          </div>
+          <div
+            class="absolute z-20 h-full w-auto"
+            data-scroll
+            data-scroll-position="bottom"
+            data-scroll-speed="3">
+            <Icon name="alba_elements_med" class="h-1/4 w-auto" />
+          </div>
+          <div
+            class="absolute z-10 h-full w-auto"
+            data-scroll
+            data-scroll-position="bottom"
+            data-scroll-speed="1">
+            <Icon name="alba_elements_grd" class="h-1/4 w-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  import '../js/locomotive'
+</script>
+<style>
+  .top {
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+  }
+  .top-description {
+    position: relative;
+    top: 30%;
+  }
+  .top-description h1 {
+    font-weight: 900;
+    font-size: 5em;
+    margin-bottom: -0.1em;
+  }
+  .gold {
+    color: #fdc65d;
+  }
+  .top-description p,
+  .grey {
+    color: #aeaead;
+  }
+  .disappear {
+    opacity: 0;
+    transition: opacity 5s;
+  }
+  .appear {
+    opacity: 1;
+  }
+</style>

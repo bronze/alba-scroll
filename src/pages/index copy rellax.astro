@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import { Icon } from 'astro-icon'
+import '../css/main.css'
+---
+
+<Layout title="Alba Capital">
+  <main class="mx-auto min-h-[150vh] max-w-screen-lg">
+    <section class="relative flex min-h-screen items-center justify-center">
+      <div class="rellax absolute">
+        <Icon name="alba_elements_grd" class="h-[347px] w-[300px]" />
+      </div>
+      <div class="rellax absolute" data-rellax-speed="3" data-rellax-zindex="2">
+        <Icon name="alba_elements_med" class="h-[347px] w-[300px]" />
+      </div>
+
+      <div class="rellax absolute" data-rellax-speed="7" data-rellax-zindex="5">
+        <Icon name="alba_elements_peq" class="h-[347px] w-[300px]" />
+      </div>
+    </section>
+    <section class="flex min-h-[200vh] items-center justify-center">
+      <div class="rellax" data-rellax-percentage="0.5">
+        I’m that default chill speed of "-2" and "centered"
+      </div>
+
+      <div class="rellax" data-rellax-speed="7" data-rellax-percentage="0.5">
+        I’m super fast!! And super centered!!
+      </div>
+
+      <div class="rellax" data-rellax-speed="-4" data-rellax-percentage="0.5">
+        I’m extra slow and smooth, and hella centered.
+      </div>
+    </section>
+    <section class="flex min-h-screen items-center justify-center">
+      <div class="rellax">
+        I’m that default chill speed of "-2" and default z-index of 0
+      </div>
+
+      <div class="rellax" data-rellax-speed="7" data-rellax-zindex="5">
+        I’m super fast!! And on top of the previous element, I'm z-index 5!!
+      </div>
+    </section>
+
+    <section class="flex min-h-screen items-center justify-center">
+      <div
+        class="rellax"
+        data-rellax-speed="7"
+        data-rellax-xs-speed="-5"
+        data-rellax-mobile-speed="3"
+        data-rellax-tablet-speed="-8"
+        data-rellax-desktop-speed="1">
+        I parallax at all different speeds depending on your screen width.
+      </div>
+      <div class="rellax" data-rellax-speed="-3">I’m slow and smooth</div>
+
+      <div class="rellax" data-rellax-speed="7">I’m super fast!!</div>
+
+      <div class="rellax" data-rellax-speed="-5">I’m extra slow and smooth</div>
+    </section>
+    <section
+      class="relative z-0 flex min-h-screen items-center justify-center py-96">
+      <div class="rellax absolute -z-10" data-rellax-speed="7">
+        <Icon name="alba_elements_peq" class="h-[347px] w-[300px]" />
+      </div>
+      <div class="rellax absolute -z-20">
+        <Icon name="alba_elements_med" class="h-[347px] w-[300px]" />
+      </div>
+      <div class="rellax absolute -z-30" data-rellax-speed="-5">
+        <Icon name="alba_elements_grd" class="h-[347px] w-[300px]" />
+      </div>
+    </section>
+    <section class="h-screen py-96"></section>
+  </main>
+</Layout>
+
+<script>
+  import '../js/rellax'
+</script>
+<style></style>
