@@ -7,17 +7,26 @@ import '../css/main.css'
 
 <Layout title="Alba Capital">
   <main class="mx-auto min-h-[150vh] max-w-screen-lg">
-    <section class="relative flex min-h-screen items-center justify-center">
-      <div class="rellax absolute">
-        <Icon name="alba_elements_grd" class="h-[347px] w-[300px]" />
-      </div>
-      <div class="rellax absolute" data-rellax-speed="3" data-rellax-zindex="2">
-        <Icon name="alba_elements_med" class="h-[347px] w-[300px]" />
-      </div>
+    <section
+      class="datarellax relative flex min-h-screen items-center justify-center">
+      <Icon
+        name="alba_elements_grd"
+        class="rellax absolute h-[347px] w-[300px]"
+      />
 
-      <div class="rellax absolute" data-rellax-speed="7" data-rellax-zindex="5">
-        <Icon name="alba_elements_peq" class="h-[347px] w-[300px]" />
-      </div>
+      <Icon
+        name="alba_elements_med"
+        class="rellax absolute h-[347px] w-[300px]"
+        data-rellax-speed="3"
+        data-rellax-zindex="2"
+      />
+
+      <Icon
+        name="alba_elements_peq"
+        class="rellax absolute h-[347px] w-[300px]"
+        data-rellax-speed="7"
+        data-rellax-zindex="5"
+      />
     </section>
     <!-- <section class="flex min-h-[200vh] items-center justify-center">
       <div class="rellax" data-rellax-percentage="0.5">
@@ -59,19 +68,25 @@ import '../css/main.css'
       <div class="rellax" data-rellax-speed="-5">I’m extra slow and smooth</div>
     </section> -->
     <section
-      class="relative z-0 flex min-h-screen items-center justify-center py-96">
-      <div class="rellax absolute -z-10" data-rellax-speed="7">
-        <Icon
-          name="alba_elements_peq"
-          class="h-[347px] w-[300px] fill-red-500"
-        />
-      </div>
-      <div class="rellax absolute -z-20">
-        <Icon name="alba_elements_med" class="h-[347px] w-[300px]" />
-      </div>
-      <div class="rellax absolute -z-30" data-rellax-speed="-5">
-        <Icon name="alba_elements_grd" class="h-[347px] w-[300px]" />
-      </div>
+      class="relative flex min-h-screen items-center justify-center py-96">
+      <Icon
+        name="alba_elements_grd"
+        class="rellax absolute h-[347px] w-[300px]"
+      />
+
+      <Icon
+        name="alba_elements_med"
+        class="rellax absolute h-[347px] w-[300px]"
+        data-rellax-speed="3"
+        data-rellax-zindex="2"
+      />
+
+      <Icon
+        name="alba_elements_peq"
+        class="rellax absolute h-[347px] w-[300px]"
+        data-rellax-speed="7"
+        data-rellax-zindex="5"
+      />
     </section>
     <section class="h-screen py-96"></section>
   </main>
@@ -80,8 +95,12 @@ import '../css/main.css'
 <script>
   import '../js/rellax'
 </script>
-<style>
+<style is:global>
   svg {
-    fill: #19585e;
+    /* fill: #19585e; */
+  }
+  svg {
+    fill: #49ccd9;
+    mix-blend-mode: difference;
   }
 </style>
