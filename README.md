@@ -11,3 +11,7 @@ Locomotive https://github.com/locomotivemtl/locomotive-scroll
 Motion One https://motion.dev/
 
 Rellax https://dixonandmoe.com/rellax/
+
+Rolly https://rolly.maj.digital/
+
+GSAP https://gsap.com/
